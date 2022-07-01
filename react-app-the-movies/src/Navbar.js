@@ -1,3 +1,6 @@
+import React from 'react'
+
+
 function NavBar(){
     return <div>
     <nav class="navbar navbar-expand-lg nav-light bg-black position-fixed wide">
