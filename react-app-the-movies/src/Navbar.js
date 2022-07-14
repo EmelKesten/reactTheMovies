@@ -2,12 +2,12 @@ import React from 'react'
 
 
 function NavBar(){
-    return <div>
-    <nav class="navbar navbar-expand-lg nav-light bg-black position-fixed wide">
-          <div class="container-fluid">
-            <a class="navbar-brand clr-blue" href="#top">The Movies</a>
+    return <div className='nav'>
+    <nav className="navbar navbar-expand-lg nav-light bg-black position-fixed wide">
+          <div className="container-fluid">
+            <a className="navbar-brand clr-blue" href="#top">The Movies</a>
             <button
-              class="navbar-toggler"
+              className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
@@ -15,30 +15,30 @@ function NavBar(){
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon navbar-light"></span>
+              <span className="navbar-toggler-icon navbar-light"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
+            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                <li className="nav-item">
                   <a
-                    class="nav-link clr-blue"
+                    className="nav-link clr-blue"
                     aria-current="page"
                     href="#mostPopular"
                     >Most Popular</a
                   >
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link clr-blue" href="#nowPlaying"
+                <li className="nav-item">
+                  <a className="nav-link clr-blue" href="#nowPlaying"
                     >Now Playing In Cinema</a
                   >
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link clr-blue" href="#upComing">Up Coming</a>
+                <li className="nav-item">
+                  <a className="nav-link clr-blue" href="#upComing">Up Coming</a>
                 </li>
               </ul>
-              <div class="d-flex">
+              <div className="d-flex">
                 <input
-                  class="form-control bg-yay"
+                  className="form-control bg-yay"
                   id="txt-input"
                   placeholder="Search"
                   aria-label="Search"

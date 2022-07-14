@@ -1,12 +1,16 @@
 import './App.css';
 import NavBar from './Navbar.js';
-import GetPopularMovies from './MostPopular';
+import TopMovies from './top-movies/Index';
+import React from "react";
+
 
 function App() {
   return (
     <div className="App">
       <NavBar></NavBar>
-      <GetPopularMovies></GetPopularMovies>
+      <div className='cont'>
+      <TopMovies></TopMovies>
+      </div>
     </div>
   );
 }
