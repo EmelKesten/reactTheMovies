@@ -2,6 +2,8 @@ import './App.css';
 import NavBar from './Navbar.js';
 import TopMovies from './top-movies/Index';
 import React from "react";
+import NowPlaying from './nowPlaying/Index';
+import UpComing from './upComing/Index';
 
 
 function App() {
@@ -9,7 +11,9 @@ function App() {
     <div className="App">
       <NavBar></NavBar>
       <div className='cont'>
-      <TopMovies></TopMovies>
+        <TopMovies></TopMovies>
+        <NowPlaying></NowPlaying>
+        <UpComing></UpComing>
       </div>
     </div>
   );
