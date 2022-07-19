@@ -5,11 +5,10 @@ import React from "react";
 import NowPlaying from './nowPlaying/Index';
 import UpComing from './upComing/Index';
 
-
 function App() {
   return (
     <div className="App">
-      <NavBar></NavBar>
+      <NavBar />
       <div className='cont'>
         <TopMovies></TopMovies>
         <NowPlaying></NowPlaying>

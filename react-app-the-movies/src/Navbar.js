@@ -1,4 +1,5 @@
 import React from 'react'
+import Input from './search/components/Input'
 
 
 function NavBar(){
@@ -37,12 +38,7 @@ function NavBar(){
                 </li>
               </ul>
               <div className="d-flex">
-                <input
-                  className="form-control bg-yay"
-                  id="txt-input"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
+                  <Input></Input>
               </div>
             </div>
           </div>

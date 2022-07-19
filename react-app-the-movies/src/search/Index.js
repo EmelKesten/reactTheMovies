@@ -1,3 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import makeMovie from './components/Movie';
+import Input from './components/Input';
+
+
+const Search = () => {
+
+
+    return (
+        <div className="search">
+        
+        </div>
+    )
+}
+
+export default Search;
