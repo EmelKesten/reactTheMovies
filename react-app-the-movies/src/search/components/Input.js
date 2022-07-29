@@ -1,13 +1,14 @@
-import { useState } from "react";
+import { SearchContext } from '../App.js';
+import { useContext } from 'react';
+
 
 
 const Input = () => {
-    const [message, setMessage] = useState('');
+  const value = useContext(SearchContext);
 
   const handleChange = event => {
-    setMessage(event.target.value);
-
-    console.log('value is:', event.target.value);
+    value.setSearch(event.target.value);
+    console.log(value.search);
   };
   return (
     <input
@@ -16,7 +17,7 @@ const Input = () => {
         placeholder="Search"
         aria-label="Search"
         onChange={handleChange}
-        value={message}
+        value={value.search}
     />
     );
 }
