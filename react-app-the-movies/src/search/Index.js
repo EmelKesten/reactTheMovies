@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+/*import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Input from './components/Input';
 import makeMovie from './components/Movie';
@@ -32,4 +32,4 @@ const Search = () => {
     );
 }
 
-export default Search;
+export default Search;*/

@@ -12,15 +12,12 @@ function App() {
   const [search, setSearch] = useState("");
   return (
     <div className="App">
-      <SearchContext.Provider value={{ search, setSearch }}>
         <NavBar />
         <div className="cont">
-          <Search />
           <TopMovies></TopMovies>
           <NowPlaying></NowPlaying>
           <UpComing></UpComing>
         </div>
-      </SearchContext.Provider>
     </div>
   );
 }

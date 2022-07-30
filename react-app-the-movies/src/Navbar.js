@@ -38,7 +38,8 @@ function NavBar(){
                 </li>
               </ul>
               <div className="d-flex">
-                  <Input></Input>
+
+
               </div>
             </div>
           </div>

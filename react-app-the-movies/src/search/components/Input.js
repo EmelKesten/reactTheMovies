@@ -1,4 +1,4 @@
-import { SearchContext } from '../App.js';
+/*import { SearchContext } from '../App.js';
 import { useContext } from 'react';
 
 
@@ -22,4 +22,4 @@ const Input = () => {
     );
 }
 
-export default Input;
+export default Input;*/
