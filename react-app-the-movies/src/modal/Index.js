@@ -25,7 +25,18 @@ function Modal(props){
     }, []);
 
     return (
-        
+        <div className="modal">
+            <div className="popUp-inner" style={
+                {
+                    backgroundImage: `url(https://image.tmdb.org/t/p/w500${data.backdrop_path})`
+                }
+            }>
+                    <button id="close">X</button>
+                    <h4>{results.title}</h4>
+                    <p>{results.overview}</p>
+                    <iframe width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
     )
 
 
