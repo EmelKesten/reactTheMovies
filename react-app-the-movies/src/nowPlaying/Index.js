@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
-import makeMovie from './components/Movie';
+import MakeMovie from './components/Movie';
 
 const NowPlaying = () => {
   const [movies, setMovies] = useState([]);
@@ -22,7 +22,7 @@ const NowPlaying = () => {
     <h1>Now Playing in Cinema</h1>
   <div className="nowPlaying-inner layout">
     {movies.map((movie) => {
-        return makeMovie(movie);
+        return MakeMovie(movie);
     })
     }
   </div>

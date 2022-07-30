@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
-import makeMovie from './components/Movie';
+import MakeMovie from './components/Movie';
 
 const TopMovies = () => {
   const [movies, setMovies] = useState([]);
@@ -22,7 +22,7 @@ const TopMovies = () => {
     <h1>Most Popular</h1>
   <div className="mostPopular-inner layout">
     {movies.map((movie) => {
-        return makeMovie(movie);
+        return MakeMovie(movie);
     })
     }
   </div>

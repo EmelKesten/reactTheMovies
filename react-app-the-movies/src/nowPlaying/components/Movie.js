@@ -1,6 +1,6 @@
 import React from "react";
 
-function makeMovie(movie) {
+function MakeMovie(movie) {
   return(
           <div key={movie.id} className="article">
             <img
@@ -13,4 +13,4 @@ function makeMovie(movie) {
   
 }
 
-export default makeMovie;
+export default MakeMovie;
