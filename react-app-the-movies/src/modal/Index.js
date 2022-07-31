@@ -1,8 +1,10 @@
 import React, {useState, useEffect} from "react";
+import axios from "axios";
 
 
 function Modal(props){
-    const [id, setId] = useState(props.id);
+    const [id, setId] = useState(props.id); 
+    console.log(id, "!id!");
     const [data, setData] = useState();
     const [video, setVideo] = useState();
 
@@ -13,32 +15,39 @@ function Modal(props){
             );
             if (result) {
                 setData(result.data);
-            }
-            const result2 = await axios.get(
-                `https://api.themoviedb.org/3/movie/${id}/videos?api_key=ac611aa60fbb0355792b075ff8337fbe&language=en-US`
-            );
-            if (result2) {
-                setVideo(result2.data.results[0].key);
+                console.log(result.data, "!result.results!");
             }
         }
         fetchData();
+        const fetchVideo = async () => {
+            const result = await axios.get(
+                `https://api.themoviedb.org/3/movie/${id}/videos?api_key=ac611aa60fbb0355792b075ff8337fbe&language=en-US`
+            );
+            if (result) {
+                setVideo(result.data.results[0].key);
+                console.log(result.data.results[0].key, "!result.results!");
+            }
+        }
+        fetchVideo();
     }, []);
-
-    return (
+    console.log(`https://image.tmdb.org/t/p/w500/${data.backdrop_path}`, "!data.backdrop_path!");
+    /*return (
         <div className="modal">
             <div className="popUp-inner" style={
                 {
-                    backgroundImage: `url(https://image.tmdb.org/t/p/w500${data.backdrop_path})`
+                    backgroundImage: `url(https://image.tmdb.org/t/p/w500/${data.backdrop_path})`
                 }
             }>
                     <button id="close">X</button>
-                    <h4>{results.title}</h4>
-                    <p>{results.overview}</p>
-                    <iframe width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h4>{data.title}</h4>
+                    <p>{data.overview}</p>
+                    
             </div>
         </div>
     )
-
-
+    
+*/
 
 }
+
+export default Modal;

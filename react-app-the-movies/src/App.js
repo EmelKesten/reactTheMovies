@@ -5,6 +5,7 @@ import React, { createContext, useState } from "react";
 import NowPlaying from "./nowPlaying/Index";
 import UpComing from "./upComing/Index";
 import Search from "./search/Index";
+import Modal from "./modal/Index";
 
 export const SearchContext = createContext("");
 
@@ -13,6 +14,7 @@ function App() {
   return (
     <div className="App">
         <NavBar />
+        <Modal id="616037" />
         <div className="cont">
           <TopMovies></TopMovies>
           <NowPlaying></NowPlaying>
