@@ -15,13 +15,15 @@ const TopMovies = () => {
       }
     };
     fetchData();
+
+    
   }, []);
 
   return (
     <div id="mostPopular">
     <h1>Most Popular</h1>
   <div className="mostPopular-inner layout">
-    {movies.map((movie) => {
+    {movies?.map((movie) => {
         return MakeMovie(movie);
     })
     }

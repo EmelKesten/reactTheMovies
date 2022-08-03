@@ -14,7 +14,6 @@ function App() {
   return (
     <div className="App">
         <NavBar />
-        <Modal id="616037" />
         <div className="cont">
           <TopMovies></TopMovies>
           <NowPlaying></NowPlaying>
